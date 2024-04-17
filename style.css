@@ -1,0 +1,72 @@
+.contenedor{
+    background-color: brown;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    
+   
+
+}
+.contenedor .contenedor__hijo:nth-child(2){
+    text-align: center;
+}
+
+.contenedor__hijo{
+    background-color: yellow;
+    width: 250px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.hijito{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    transition: 1s;
+}
+.contenedor__hijo .hijito:nth-child(1):hover{
+    transform: translateX(-100px) scale(3) rotate(280deg);
+    transition: 1s;
+    background-color: turquoise;
+    border-radius: 50%;
+    box-shadow: 0 0 30px 5px rgb(96, 30, 210) ;
+    border: 2px solid springgreen;
+
+}
+.contenedor__hijo .hijito:nth-child(2){
+    animation-name: tupac; 
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tupac {
+   0%{
+    
+   }
+   50%{
+    transform: translateX(600px);
+
+
+   }
+   100%{
+    transform:  scale(3) rotate(280deg);
+    background-color: turquoise;
+    border-radius: 50%;
+    box-shadow: 0 0 30px 5px rgb(96, 30, 210) ;
+    border: 2px solid springgreen;
+
+   }
+    
+    
+}
+    
